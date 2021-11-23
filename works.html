@@ -29,7 +29,8 @@
 	padding:15px;
   /* color:#555; */
   background-color: rgb(27, 30, 44);
-  color:wheat;
+  /* color:wheat; */
+  color: white;
   font-size:16px;
   font-weight:bold;
 	text-transform:uppercase;
@@ -50,12 +51,17 @@
 } 
 .panel-body {
     background-color: rgb(27, 30, 44);
-  color:wheat;
+    color:white;
+    font-size:large;
 }
 
 .image{
     height:auto;
     width:100%;
+}
+
+body{
+    color: white;
 }
 
 </style>
@@ -73,11 +79,11 @@
         </div>
 
         <div class="what_do">
-            <h5 id="workHeading">Welcome to our workshop</h5> </br></br></br>
-            <p id="workPara"> Here is a sample of the food we prepare in <em>COOK WITH US</em>. <br>
+            <h1 style="text-align: center;">Welcome to our workshop</h1> </br></br>
+            <h3 id="workPara"> Here is a sample of the food we prepare in <em>COOK WITH US</em>. <br>
                 If you like one of the sample of our recipe, You have just to click on it
                 And you will see all the ingredients,and steps to prepare it.
-            </p>
+            </h3>
 
             <div class="images1">
                 <div class="col-md-3">
@@ -95,8 +101,9 @@
                           <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                             <div class="panel-body">
                                 We've got the secret to cooking a burger that's crispy on the outside, yet juicy on the inside.
-                                <br>
-                                Ingredients<br>
+                                <!-- <br><b>INGREDIENTS:</b><br> -->
+
+                                <h3 style="text-align: left;">Ingredients:</h3>
         
                                 3/4 pound freshly ground sirloin
                                 1/4 pound freshly ground brisket (if you can't find brisket, substitute ground chuck)
@@ -104,7 +111,8 @@
                                 4 potato rolls, preferably Martin's brand
                                 2 tablespoons vegetable oil<br>
         
-                                HOW TO DO IT:<br>
+                                <h3 style="text-align: left;">How to do it:</h3>
+                                <!-- <b>HOW TO DO IT:</b><br> -->
         
                                 In a large bowl, mix ground beef, onion powder, salt and pepper until just combined.
                                 Do not overmix, or your patties will be tough.
@@ -409,13 +417,17 @@
             </div><!-- closes images 2 -->
 
         </div> <!-- closes what we do -->
-
+        
+        
+        <h3>Here is a sample of some of the drinks we make in <em>COOK WITH US</em></h3>
         <div class="drinks">
-            <h3>Here is a sample of some of the drinks we make in <em>COOK WITH US</em></h3>
-            <video id="drinksVid" width="650" height="400" controls>
+            
+            <div id="drinksVid">
+            <video width="650" height="400" controls>
                 <source src="video/3 Milkshake Recipe _ Chocolate Milkshake _ Oreo Milkshake _ Kitkat Milkshake.mp4"
                     type=video/mp4>
             </video>
+        </div>
         </div>
 
 

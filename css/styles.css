@@ -19,7 +19,7 @@ body{
 #contact{
  background-color: black;
   color: white;
-  margin: 25px;
+  /* margin: 25px; */
   font-family: 'Text Me One', sans-serif;
 
 }
@@ -29,8 +29,10 @@ nav>ul>li>a{
     text-transform:uppercase;
     text-decoration:none;
     display:block;
-    color: coral;
+    /* color: coral; */
+    color: white;
     font-family: 'Tangerine', cursive;
+    /* font-family: 'Text Me One', sans-serif; */
     font-size: 17px;
   }
   nav>ul {
@@ -45,17 +47,7 @@ nav>ul>li>a{
       text-decoration:none;
       background-color:rgb(80, 87, 117);
   }
-  h1{
-      text-align: center;
-      margin-top: 210px;
-      color: rgb(80, 87, 117);
-      font-family: 'Berkshire Swash', cursive;
-      font-size: 45px;
-      /* background-color: rgb(210, 229, 240, 0.5); */
-      /* border-radius:30px; */
-      padding: 2%;
-     /* width: 50%; */
-  } 
+ 
   #intro{
  text-align: center;
  }
@@ -65,25 +57,25 @@ nav>ul>li>a{
   /*workshop styling*/
   .works-page{
     background-color: rgb(27, 30, 44);
-    color:wheat;
+    color:white;
   }
   #workHeading{
       text-align: center;
       font-size: xx-large;
       font-weight: 400;
-      font-style: italic;
-      font-family: 'Courier New', Courier, monospace;
+      /* font-style: italic; */
+      /* font-family: 'Courier New', Courier, monospace; */
       padding-top: 90px;
   }
   #workPara{
       text-align: center;
       font-weight: 200;
-      font-family: 'Courier New', Courier, monospace;
+      /* font-family: 'Courier New', Courier, monospace; */
      padding-bottom: 100px;
      padding-top: 60px;
      padding-left: 15px;
      padding-right: 15px;
-     color:wheat;
+     color:white;
   }
   #name1,#name2,#name3,#name4,#name5,#name6,#name7,#name8,#name9{
       font-size: 15px;
@@ -148,16 +140,33 @@ nav>ul>li>a{
     text-align: center;
 }
 
-.drinks>h3{
-    color: wheat;
+h3{
+    color: white;
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
     font-size: larger;
 }
+
+.drinks{
+  display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   
+}
+
 #drinksVid{
-    margin-left: 300px;
-    margin-bottom: 60px;
+  /* width: 80%; */
+  width:650px;
+  height:400px;
+  margin-bottom:5%
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+    /* margin-left: 300px;
+    margin-bottom: 60px; */
 }
 
 
@@ -171,10 +180,6 @@ nav>ul>li>a{
     transition-duration: 0.2s;
 }
 
-
-#story{
-  text-align: center;
-}
 p{
   color: black;
   justify-content: center;
@@ -213,16 +218,6 @@ p{
   width: 450px;
 }
 
-#story-us{
-  padding: 2%;
-}
-h2{
-  text-align: center;
-}
-#story1{
-  background-color: burlywood;
-}
-
 
 .fa-facebook{
   /* background:darkblue; */
@@ -256,63 +251,29 @@ h2{
     /* padding: 10px; */
     background-color: rgb(27, 30, 44);
     margin: 5px 5px; 
+    margin-bottom:0%;
   }
 
   
-  #cont{
-    color: chocolate;
+  /* #cont{
+    color: white;
     padding-top: 25px;
     text-align: center;
-    animation: bounce 3s infinite;
-  }
-
-  @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-50px);
-    }
-    50% {
-      transform: translateY(-50px);
-    }
-  }
-  .form-control::-webkit-input-placeholder{
-    color:wheat;
-}
-#name,#anyemail,#textarea{
-    margin-left: 15px;
-    margin-bottom: 15px;
-}
-#textarea{
-    width: 750px;
-
-}
-input[type="text"],input[type="email"],#textarea,input[type="submit"],button{
-  background-color: transparent;
-  color: white;
-  text-align: center;
-}
+  } */
   button{
     margin-top: 30px;
     margin-left: 325px;
    border-radius: 10px;
   }
-  #column1{
+  /* #column1{
     margin-left: 250px;
-  }
+  } */
   footer{
   text-align: center;
   margin-top: 40px;
-
+  margin-bottom:0%
   }
-  #order{
 
-    background-color:black;
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    font-weight: 700;
-
-  }
   #make{
     color:chocolate;
     margin-top: 50px;
@@ -323,15 +284,7 @@ input[type="text"],input[type="email"],#textarea,input[type="submit"],button{
 
   option{
     font-weight: 700;
-   
-    
   }
-  
-  input[type="number"]{
-background-color: transparent;
-  }
-
-
 
   .navigation-container{
     width: 100%;
@@ -352,12 +305,7 @@ background-color: transparent;
   padding: 0%;
   font-family: "montserrat",sans-serif;
 }
-.testimonials{
-  padding: 20px 0;
-  background: rgb(136, 134, 132);
-  color: black;
-  text-align: center;
-}
+
 .inner{
   max-width: 1000px;
   margin: auto;
@@ -370,26 +318,13 @@ background-color: transparent;
   background: rgb(192, 192, 192);
  
 }  */
-.testimonials{
-  background: burlywood;
-  color: black;
-  padding: 30px;
-}
-.testimonials img{
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
-}
+
 .name{
   font-size: 20px;
   text-transform: uppercase;
   margin: 20px 0;
 }
-h1{  /*  testimonials title */
-  color: rgb(2, 2, 2);
-  margin-top: auto;
-  
-}
+
 .social2{
   text-align: center;
   /* padding: 5px; */
@@ -397,15 +332,6 @@ h1{  /*  testimonials title */
   margin: 5px 5px; 
 }
 
-#story-title{
-  text-align: center;
-  color: rgb(58, 38, 24);
-  font-size: 50px;
-  font-family: 'Chilanka', cursive;
-}
-#storyus{
-  font-size:20px ;
-}
 .test{
   font-family: 'Josefin Sans', sans-serif;
   color: black;
