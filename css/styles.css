@@ -128,7 +128,12 @@ nav>ul>li>a{
     color: wheat;
 } 
 
-#one,#two,#three,#four,#five,#six,#seven,#eight,#nine{
+/* #one,#two,#three,#four,#five,#six,#seven,#eight,#nine{
+  height: 250px;
+  width: 300px;
+} */
+
+#four,#five,#six,#seven,#eight,#nine{
   height: 250px;
   width: 300px;
 }
