@@ -83,21 +83,19 @@ body{
 
         <div class="what_do">
             <h1 style="text-align: center;">Welcome to our workshop</h1> </br></br>
-            <h3 id="workPara"> Here is a sample of the food we prepare in <em>COOK WITH US</em>. <br>
-                If you like one of the sample of our recipe, You have just to click on it
-                And you will see all the ingredients,and steps to prepare it.
+            <h3 id="workPara"> Here is a sample of the food we prepare in <em>COOK WITH US</em>.
             </h3>
 
             <div class="images1">
                 <div class="col-md-3">
-                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_!" aria-expanded="false" aria-controls="collapse_1">
+                  <a class="collapsed" onclick="toggleActive('headingOne')" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_!" aria-expanded="false" aria-controls="collapse_1">
                     <img id="im_1" class="image" src="img/burger.jpeg">
                     </a>
                     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                         <div class="panel panel-default">
                           <div class="panel-heading" role="tab" id="headingOne">
                             <h4 class="panel-title">
-                              <a class="collapsed" role="button" id = "A_1" data-toggle="collapse" data-parent="#accordion" href="#collapse_1" aria-expanded="false" aria-controls="collapse_1">
+                              <a class="collapsed" onclick="toggleActive('headingOne')" role="button" id = "A_1" data-toggle="collapse" data-parent="#accordion" href="#collapse_1" aria-expanded="false" aria-controls="collapse_1">
                                 CHEESE BURGER
                               </a>
                             </h4>
@@ -147,14 +145,14 @@ body{
                 <div class="col-md-3">
                    
 
-                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_2" aria-expanded="false" aria-controls="collapse_2">
+                  <a class="collapsed" onclick="toggleActive('headingTwo')" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_2" aria-expanded="false" aria-controls="collapse_2">
                     <img id="im_2" class="image" src="img/salad.jpg">
                     </a>
                     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                         <div class="panel panel-default">
                           <div class="panel-heading" role="tab" id="headingTwo">
                             <h4 class="panel-title">
-                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_2" aria-expanded="false" aria-controls="collapse_2">
+                              <a class="collapsed" onclick="toggleActive('headingTwo')" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_2" aria-expanded="false" aria-controls="collapse_2">
                                 GREEK SALAD WITH CHICKEN
                               </a>
                             </h4>
@@ -190,20 +188,20 @@ body{
 
                 </div>
                 <div class="col-md-3">
-                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_3" aria-expanded="false" aria-controls="collapse_3">
+                  <a class="collapsed" onclick="toggleActive('headingThree')" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_3" aria-expanded="false" aria-controls="collapse_3">
                     <img id="im_3" class="image" src="img/paprikaChips.jpeg">
                     </a>
                     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                         <div class="panel panel-default">
                           <div class="panel-heading" role="tab" id="headingThree">
                             <h4 class="panel-title">
-                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_3" aria-expanded="false" aria-controls="collapse_3">
+                              <a class="collapsed" onclick="toggleActive('headingThree')" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_3" aria-expanded="false" aria-controls="collapse_3">
                                 PAPRIKA CHIPS
                               </a>
                             </h4>
                           </div>
                           <div id="collapse_3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                            <div class="panel-body">
+                            <div class="panel-body"> 
                                 <h3 style="text-align: left;">Ingredients:</h3>
 
                         875 g baking potatoes such as Russet <br>
@@ -234,14 +232,14 @@ body{
 
             <div class="images2">
                 <div class="col-md-3">
-                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  <a class="collapsed" onclick="toggleActive('headingFour')" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                     <img id="four" class="image" src="img/yellowRice.webp">
                     </a>
                     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                         <div class="panel panel-default">
                           <div class="panel-heading" role="tab" id="headingFour">
                             <h4 class="panel-title">
-                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                              <a class="collapsed" onclick="toggleActive('headingFour')" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                 YELLOW RICE
                               </a>
                             </h4>
@@ -260,7 +258,7 @@ body{
                         5 tbsp raisin
 
 
-                        <h3 style="text-align: left;">HOW TO DO IT:</h3>
+                        <h3 style="text-align: left;">How to do it:</h3>
                         
                         
                         1. Put all the ingredients in a large pan with 1 tsp salt and 500ml water,
@@ -277,14 +275,14 @@ body{
                 </div>
 
                 <div class="col-md-3">
-                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  <a class="collapsed" onclick="toggleActive('headingFive')" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                     <img id="five" class="image" src="img/beef.jpg">
                   </a>
                     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                         <div class="panel panel-default">
                           <div class="panel-heading" role="tab" id="headingFive">
                             <h4 class="panel-title">
-                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                              <a class="collapsed" onclick="toggleActive('headingFive')" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                                 MONGOLIAN BEFF
                               </a>
                             </h4>
@@ -300,7 +298,7 @@ body{
                         1 1/2 teaspoons minced garlic <br>
                         1 teaspoon minced ginger
 
-                        <h3 style="text-align: left;">HOW TO MAKE IT: </h3>
+                        <h3 style="text-align: left;">How to do it: </h3>
                         1. Flank steak is easiest to slice thin when it’s partially frozen.<br><br>
                         2. Place your meat in the freezer about 30 minutes before you plan to use it.<br><br>
                         3. You want the meat to sear and not steam, so you’ll need to avoid adding too much meat at once to
@@ -318,14 +316,14 @@ body{
 
                 </div>
                 <div class="col-md-3">
-                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  <a class="collapsed" onclick="toggleActive('headingSix')" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                     <img id="six" class="image" src="img/chocolateCookie.jpg">
                   </a>
                     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                         <div class="panel panel-default">
                           <div class="panel-heading" role="tab" id="headingSix">
                             <h4 class="panel-title">
-                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                              <a class="collapsed" onclick="toggleActive('headingSix')" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                                 CHOCOLATE COOKIES
                               </a>
                             </h4>
@@ -333,20 +331,7 @@ body{
                           <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
                             <div class="panel-body">
                                 These triple chocolate cookies are chewy in the middle with deliciously crispy edges.<br>
-                        <h3 style="text-align: left;">HOW TO MAKE IT: </h3>
-                        1. Preheat the oven to 180°C/gas mark 4. Line 2 baking trays with baking parchment. <br><br>
-                        2. Place the dark chocolate in a heatproof bowl over a pan of simmering water (make sure it's not
-                        touching)
-                        until melted. Leave to cool slightly.<br><br>
-                        3. Using an electric mixer, whisk together the butter, light brown sugar,
-                        caster sugar and vanilla extract until creamy. <br><br>
-                        
-                        4. Whisk in the melted dark chocolate and egg.<br><br>
-                        5. Stir in the flour, cocoa powder and baking powder, until well combined.<br><br>
-                        6. Stir in the chocolate chunks. Spoon rounds of the mixture on to the trays and bake for 12
-                        minutes.<br><br>
-
-                        <h3 style="text-align: left;">Ingredients: </h3>
+                                <h3 style="text-align: left;">Ingredients:</h3>
 
                         150g smooth dark chocolate, broken up <br>
                         150g unsalted butter, softened <br>
@@ -359,6 +344,20 @@ body{
                         1 tsp baking powder <br>
                         150g smooth milk chocolate, chopped into chunks <br>
                         150g smooth white chocolate, chopped into chunks
+                        <h3 style="text-align: left;">How to do it: </h3>
+                        1. Preheat the oven to 180°C/gas mark 4. Line 2 baking trays with baking parchment. <br><br>
+                        2. Place the dark chocolate in a heatproof bowl over a pan of simmering water (make sure it's not
+                        touching)
+                        until melted. Leave to cool slightly.<br><br>
+                        3. Using an electric mixer, whisk together the butter, light brown sugar,
+                        caster sugar and vanilla extract until creamy. <br><br>
+                        
+                        4. Whisk in the melted dark chocolate and egg.<br><br>
+                        5. Stir in the flour, cocoa powder and baking powder, until well combined.<br><br>
+                        6. Stir in the chocolate chunks. Spoon rounds of the mixture on to the trays and bake for 12
+                        minutes.<br><br>
+
+                        
                             </div>
                           </div>
                         </div>
@@ -370,16 +369,16 @@ body{
 
             <div class="images3">
                 <div class="col-md-3">
-                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                    <img id="seven" class="image" src="img/roastedChicken.webp">
+                  <a class="collapsed" onclick="toggleActive('headingSeven')" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    <img id="seven" class="image" src="img/roastchicken.jpeg">
                   </a>
 
                     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                         <div class="panel panel-default">
                           <div class="panel-heading" role="tab" id="headingSeven">
                             <h4 class="panel-title">
-                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                PROAST CHICKEN WITH LEMON
+                              <a class="collapsed" onclick="toggleActive('headingSeven')" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                ROAST CHICKEN WITH LEMON
                               </a>
                             </h4>
                           </div>
@@ -391,7 +390,7 @@ body{
                                 2 cloves garlic (smashed) <br>
                                 1 lemon (halved) <br>
                                 3 sprigs fresh rosemary
-                                <h3 style="text-align: left;">HOW TO MAKE IT: </h3>
+                                <h3 style="text-align: left;">How to do it: </h3>
                                 1. Roasting a whole chicken is pretty simple to do,
                                 as long as you have a thermometer you can’t go wrong. <br><br>
                                 2. The combination of rosemary and lemon is wonderful with chicken! <br><br>
@@ -406,14 +405,14 @@ body{
                 </div>
 
                 <div class="col-md-3">
-                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                  <a class="collapsed" onclick="toggleActive('headingEight')" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
                     <img id="eight" class="image" src="img/popatoeschips.jpg">
                   </a>
                     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                         <div class="panel panel-default">
                           <div class="panel-heading" role="tab" id="headingEight">
                             <h4 class="panel-title">
-                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                              <a class="collapsed" onclick="toggleActive('headingEight')" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
                                 POTATOES CHIPS
                               </a>
                             </h4>
@@ -433,7 +432,7 @@ body{
                         1 clove garlic, minced <br>
                         1⁄4 cup chopped parsley and the grated zest of 1 lemon
 
-                        <h3 style="text-align: left;">HOW TO MAKE IT: </h3>
+                        <h3 style="text-align: left;">How to do it: </h3>
                         1. Preheat the oven to 400°F. <br><br>
                         2. Scrub the potatoes with cold water and cut crosswise into 1⁄8" thick slices.<br><br>
                         3. Toss with the olive oil and season with salt and pepper.<br><br>
@@ -446,14 +445,14 @@ body{
                       </div>
                 </div>
                 <div class="col-md-3">
-                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                  <a class="collapsed" onclick="toggleActive('headingNine')" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
                     <img id="nine" class="image" src="img/sweetPotatoes.jpg">
                   </a>
                     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                         <div class="panel panel-default">
                           <div class="panel-heading" role="tab" id="headingNine">
                             <h4 class="panel-title">
-                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                              <a class="collapsed" onclick="toggleActive('headingNine')" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
                                 GRILLED SWEET POTATOES
                               </a>
                             </h4>
@@ -474,7 +473,7 @@ body{
                         1/4 cup extra virgin olive oil <br>
                         Pinch of salt
 
-                        <h3 style="text-align: left;">HOW TO MAKE IT: </h3>
+                        <h3 style="text-align: left;">How to do it: </h3>
                         1. Prepare the grill, prep the sweet potatoes: Prepare your grill for hot, direct heat.<br><br>
                         2. While the grill is heating up, peel the sweet potatoes and slice lengthwise,
                         or on a diagonal, into 1/4 inch-thick pieces.<br><br>
@@ -529,15 +528,17 @@ body{
 </body>
 
 <script>
-    $('.panel-collapse').on('show.bs.collapse', function () {
-        console.log("open")
-   $(this).siblings('.panel-heading').addClass('active');
- });
-
- $('.panel-collapse').on('hide.bs.collapse', function () {
-    console.log("close")
-   $(this).siblings('.panel-heading').removeClass('active');
- });
+  function toggleActive(heading_id) {
+    //document.write("Clicked");
+    console.log(heading_id)
+    classNameIni = document.getElementById(heading_id).className
+    if(classNameIni == 'panel-heading'){
+      document.getElementById(heading_id).className = "panel-heading active"
+    }
+    else{
+      document.getElementById(heading_id).className = "panel-heading"
+    }
+}
 </script>
 
 </html>
