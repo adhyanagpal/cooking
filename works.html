@@ -7,8 +7,64 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
     <title>Cooking</title>
 </head>
+
+<style>
+    .panel-heading {
+  padding: 0;
+	border:0;
+    
+}
+.panel-title>a, .panel-title>a:active{
+	display:block;
+	padding:15px;
+  /* color:#555; */
+  background-color: rgb(27, 30, 44);
+  /* color:wheat; */
+  color: white;
+  font-size:16px;
+  font-weight:bold;
+	text-transform:uppercase;
+	letter-spacing:1px;
+  word-spacing:3px;
+	text-decoration:none;
+}
+.panel-heading  a:before {
+   font-family: 'Glyphicons Halflings';
+   content: "\e114";
+   float: right;
+   transition: all 0.5s;
+}
+.panel-heading.active a:before {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	transform: rotate(180deg);
+} 
+.panel-body {
+    background-color: rgb(27, 30, 44);
+    color:white;
+    font-size:large;
+}
+
+.image{
+    height:auto;
+    width:100%;
+}
+
+body{
+    color: white;
+}
+
+</style>
 
 <body>
     <div class="works-page">
@@ -17,25 +73,66 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="works.html">Workshop</a></li>
-                    <li><a href="order.html">Order</a></li>
-                    <li><a href="story.html">our story</a></li>
                     <li><a href="contacts.html"> Contact us</a></li>
-                    <li><a href="gallery.html"> Gallery</a></li>
-
                 </ul>
             </nav>
         </div>
 
         <div class="what_do">
-            <h5 id="workHeading">Welcome to our workshop</h5> </br></br></br>
-            <p id="workPara"> Here is a sample of the food we prepare in <em>COOK WITH US</em>. <br>
+            <h1 style="text-align: center;">Welcome to our workshop</h1> </br></br>
+            <h3 id="workPara"> Here is a sample of the food we prepare in <em>COOK WITH US</em>. <br>
                 If you like one of the sample of our recipe, You have just to click on it
                 And you will see all the ingredients,and steps to prepare it.
-            </p>
+            </h3>
+
             <div class="images1">
                 <div class="col-md-3">
-                    <img id="one" class="hidden1" src="img/burger.jpeg">
-                    <h4 id="name1">CHEESE BURGER<span class="clickable"></span></h4>
+                    <img id="one" class="image" src="img/burger.jpeg">
+
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                CHEESE BURGER
+                              </a>
+                            </h4>
+                          </div>
+                          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                We've got the secret to cooking a burger that's crispy on the outside, yet juicy on the inside.
+                                <!-- <br><b>INGREDIENTS:</b><br> -->
+
+                                <h3 style="text-align: left;">Ingredients:</h3>
+        
+                                3/4 pound freshly ground sirloin
+                                1/4 pound freshly ground brisket (if you can't find brisket, substitute ground chuck)
+                                2 tablespoons unsalted butter, plus more if needed
+                                4 potato rolls, preferably Martin's brand
+                                2 tablespoons vegetable oil<br>
+        
+                                <h3 style="text-align: left;">How to do it:</h3>
+                                <!-- <b>HOW TO DO IT:</b><br> -->
+        
+                                In a large bowl, mix ground beef, onion powder, salt and pepper until just combined.
+                                Do not overmix, or your patties will be tough.
+                                Divide into six portions and form patties, without pressing too hard.
+                                They should be uniform in thickness. Smooth out any cracks using your fingers.
+                                Make these right before you grill them, so they stay at room temperature.
+                                Preheat your grill, grill pan or cast-iron skillet to high heat and add burger patties.
+                                If using a grill, cover with the lid.
+                                Cook until the crust that forms on the bottom of the burger releases it
+                                from the pan or grate — about 2 minutes. Gently test, but don't flip it until it gets to this
+                                point.
+                                When burgers lift up easily, flip, add two slices of cheese to each, close lid if using a grill,
+                                and cook on the other side for another 2-3 minutes for medium to medium rare.
+        
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    <!-- <h4 id="name1">CHEESE BURGER<span class="clickable"></span></h4>
                     <p class="showing" id="1">
                         We've got the secret to cooking a burger that's crispy on the outside, yet juicy on the inside.
                         <br>
@@ -61,11 +158,45 @@
                         point.
                         When burgers lift up easily, flip, add two slices of cheese to each, close lid if using a grill,
                         and cook on the other side for another 2-3 minutes for medium to medium rare.
-                    </p>
+                    </p> -->
                 </div>
                 <div class="col-md-3">
-                    <img id="two" class="hidden2" src="img/salad.jpg">
-                    <h4 id="name2">GREEK SALAD WITH CHICKEN<span class="clickable"></span></h4>
+                    <img id="two" class="image" src="img/salad.jpg">
+
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                GREEK SALAD WITH CHICKEN
+                              </a>
+                            </h4>
+                          </div>
+                          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                This delicious Greek salad topped with Greek marinaded chicken is the best for meal prepped
+                        lunches. <br>
+                        Ingredients:<br>
+
+                        6 cups chopped lettuce (such as iceberg or romaine)
+                        1 8- ounce Greek Marinated Chicken Breast
+                        2 cups Mediterranean Tomato Salad or sliced tomatoes
+                        cup sliced Persian or hothouse cucumber
+                        1/4 cup kalamata olives
+
+                        Add the lettuce to a large serving bowl or two individual salad bowls.
+                        Top with the sliced chicken, tomato salad, cucumber, olives, and feta cheese.
+                        To make the dressing, add the olive oil, red wine vinegar, garlic, oregano, sugar and salt
+                        and pepper to a small canning jar. Top with the lid and shake well until blended and emulsified.
+                        Season with more sugar and salt and pepper to taste.
+                        Drizzle the dressing over the salad and toss to taste.  
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    <!-- <h4 id="name2">GREEK SALAD WITH CHICKEN<span class="clickable"></span></h4>
                     <p class="showing" id="2">
                         This delicious Greek salad topped with Greek marinaded chicken is the best for meal prepped
                         lunches. <br>
@@ -83,7 +214,7 @@
                         and pepper to a small canning jar. Top with the lid and shake well until blended and emulsified.
                         Season with more sugar and salt and pepper to taste.
                         Drizzle the dressing over the salad and toss to taste.
-                    </p>
+                    </p> -->
                 </div>
                 <div class="col-md-3">
                     <img id="three" class="hidden3" src="img/paprikaChips.jpeg">
@@ -286,13 +417,17 @@
             </div><!-- closes images 2 -->
 
         </div> <!-- closes what we do -->
-
+        
+        
+        <h3>Here is a sample of some of the drinks we make in <em>COOK WITH US</em></h3>
         <div class="drinks">
-            <h3>Here is a sample of some of the drinks we make in <em>COOK WITH US</em></h3>
-            <video id="drinksVid" width="650" height="400" controls>
+            
+            <div id="drinksVid">
+            <video width="650" height="400" controls>
                 <source src="video/3 Milkshake Recipe _ Chocolate Milkshake _ Oreo Milkshake _ Kitkat Milkshake.mp4"
                     type=video/mp4>
             </video>
+        </div>
         </div>
 
 
@@ -309,5 +444,17 @@
 
     </div>
 </body>
+
+<script>
+    $('.panel-collapse').on('show.bs.collapse', function () {
+        console.log("open")
+   $(this).siblings('.panel-heading').addClass('active');
+ });
+
+ $('.panel-collapse').on('hide.bs.collapse', function () {
+    console.log("close")
+   $(this).siblings('.panel-heading').removeClass('active');
+ });
+</script>
 
 </html>
