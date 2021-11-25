@@ -1,4 +1,9 @@
+
+
+
 window.saveDataAcrossSessions = true;
+
+
 webgazer.setGazeListener((data, currentTime) => {
     if (data == null) {
         return;
@@ -21,6 +26,7 @@ webgazer.setGazeListener((data, currentTime) => {
     }
     }
 }).begin();
+
 
 
 
