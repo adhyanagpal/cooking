@@ -111,6 +111,9 @@
     {
         // adding the script element to the head as suggested before
       var toggle = document.getElementById('toogle_switch')
+      if(toggle.checked == false){
+        window.location.reload()
+      }
       
        var head = document.getElementsByTagName('head')[0];
        var script = document.createElement('script');
