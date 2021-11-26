@@ -18,6 +18,67 @@
     .contain{
         background-color: rgb(27, 30, 44);
     }
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 30px;
+      }
+      
+      /* Hide default HTML checkbox */
+      .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      
+      /* The slider */
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+      
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 20px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+      
+      input:checked + .slider {
+        background-color: #2196F3;
+      }
+      
+      input:focus + .slider {
+        box-shadow: 0 0 1px #2196F3;
+      }
+      
+      input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+      }
+      
+      /* Rounded sliders */
+      .slider.round {
+        border-radius: 24px;
+      }
+      
+      .slider.round:before {
+        border-radius: 50%;
+      }
 </style>
 <body id="contact">
     <div class="contain">
@@ -27,6 +88,17 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="works.html">Recipes</a></li>
                     <li><a href="contacts.html"> Contact us</a></li>
+                    <li>Enable Eye Gaze</li>
+                    <li>
+                      <a href="#">
+                      <label class="switch"> 
+                        <input id="toogle_switch" type="checkbox" onclick='loadScript("eyetracking.js")'>
+                        <span class="slider round"></span>
+                      </label>
+                  </a>
+                  
+                  
+                  </li>
                 </ul>
             </nav>
         </div>
@@ -81,5 +153,43 @@
 
 
 </body>
+<script>
+    function loadScript(url)
+    {
+        // adding the script element to the head as suggested before
+      var toggle = document.getElementById('toogle_switch')
+      
+       var head = document.getElementsByTagName('head')[0];
+       var script = document.createElement('script');
+       script.type = 'text/javascript';
+       script.defer = 'true'
+       script.id = 'webgazerid'
+       script.src = 'webgazer.js';
+    
+       // then bind the event to the callback function 
+       // there are several events for cross browser compatibility
+       script.onreadystatechange = load;
+       script.onload = load;
+    
+       // fire the loading
+       head.appendChild(script);
+      
+    }
+    
+    function load(){
+      var head = document.getElementsByTagName('head')[0];
+       var script = document.createElement('script');
+       script.type = 'text/javascript';
+       script.defer = 'true'
+       script.id = 'eyetrackid'
+       script.src = 'eyetracking.js';
+    
+       
+    
+       // fire the loading
+       head.appendChild(script);
+    
+    }
+</script>
 
 </html>

@@ -24,17 +24,17 @@ body{
 
 }
 nav>ul>li>a{
-    padding:18px;
+    padding:38px;
     
     text-transform:uppercase;
     text-decoration:none;
     display:block;
     /* color: coral; */
     color: white;
-    /* font-family: 'Tangerine', cursive; */
+     /*font-family: 'Berkshire Swash', cursive; */
     /* font-family: 'Text Me One', sans-serif; */
     /* font-size: 17px; */
-    font-size: large;
+    font-size: 25px;
   }
   nav>ul {
     text-align:right;
