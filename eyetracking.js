@@ -22,6 +22,7 @@ webgazer.setGazeListener((data, currentTime) => {
         if(ele_value.className == 'panel-collapse collapse'){
             document.getElementById(collapseid).className = "panel-collapse collapse show"
         }
+       
     }
     }
     }
